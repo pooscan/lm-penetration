@@ -108,3 +108,15 @@ class mysqldb(object):
         except OSError as e:
             db.rollback()
         db.close()
+
+    def insertPort(taskname,ip,port,finger):
+        db = mdb.connect(conf.DB['HOST'], conf.DB['USER'], conf.DB['PASSWORD'], conf.DB['DB_NAME'])
+        cursor = db.cursor()
+        sql = "INSERT INTO port(taskname,ip,port,finger,addtime) VALUES('%s','%s','%s','%s','%s')" %(taskname,ip,port,finger,time.time())
+        try:
+            # 执行SQL语句
+            cursor.execute(sql)
+            db.commit()
+        except OSError as e:
+            db.rollback()
+        db.close()

@@ -1,5 +1,5 @@
 from supermo.core.whoami import whoami
-url = "https://www.5djbb.com"
+url = "http://you.163.com"
 res = whoami(url)
 res.run()
 cms = list(res.cms_list)

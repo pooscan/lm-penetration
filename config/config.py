@@ -17,10 +17,10 @@ PROXY_TIMEOUT = 5   # 超时时间。代理ip在测试过程中的超时时间�
 PAGE_NUM = 1        # 从代理ip网站上总共要爬取的ip页数
 
 # redis配置
-REDIS_HOST = '192.168.0.6'
+REDIS_HOST = '39.106.137.121'
 REDIS_PORT = 6379
 REDIS_DB = 0
-REDIS_PASSWORD = 'Mo52492'
+REDIS_PASSWORD = 'Mo5363816'
 
 # 邮件服务配置
 IS_EMAILL_SERVICE_ENABLE = False
